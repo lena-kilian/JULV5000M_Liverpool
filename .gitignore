@@ -1,6 +1,3 @@
-
-*.csv
-*.txt
-*.xlsx
-*.zip
-*.png
+*.ipynb
+!.gitignore
+!.gitignore
