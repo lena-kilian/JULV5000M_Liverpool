@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2017-03-21T23:10:52/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-03-21T23:10:52/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-03-21T23:10:52/font-awesome/css/font-awesome.min.css" />
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-03-21T23:10:52/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/cdrc/:version:2018-09-05T15:35:36.98/vendor/cookieconsent/cookieconsent.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/cdrc/:version:2018-09-05T15:35:36.98/css/main.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.5.0a" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CDRC Data</title>
+
+    
+    <link rel="shortcut icon" href="/images/CDRC_fav.png" />
+    
+      
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // This function loops over all tracking code when sending metrics
+      function gasend(){
+        var args = Array.prototype.slice.call(arguments);
+        
+        ga.apply(ga, ['tracking_0.send'].concat(args) );
+        
+        ga.apply(ga, ['tracking_1.send'].concat(args) );
+        
+        ga.apply(ga, ['tracking_2.send'].concat(args) );
+        
+        ga.apply(ga, ['tracking_3.send'].concat(args) );
+        
+      }
+
+      
+      ga('create', 'UA-65841274-1', 'auto', 'tracking_0');
+      ga('tracking_0.send', 'pageview');
+      
+      ga('create', 'UA-66010834-1', 'auto', 'tracking_1');
+      ga('tracking_1.send', 'pageview');
+      
+      ga('create', 'UA-65841274-1', 'auto', 'tracking_2');
+      ga('tracking_2.send', 'pageview');
+      
+      ga('create', 'UA-66010834-1', 'auto', 'tracking_3');
+      ga('tracking_3.send', 'pageview');
+      
+
+    </script>
+
+    
+  </head>
+
+  
+  <body data-site-root="https://data.cdrc.ac.uk/" data-locale-root="https://data.cdrc.ac.uk/" >
+
+    
+    <div class="hide"><a href="#content">Skip to content</a></div>
+  
+    
+  
+  
+    
+    <div class="flash-messages container" style="">
+      
+        
+          <div class="alert fade in alert-error">
+            Unauthorized to read resource 7c80cf31-5bf5-4714-9647-d3ca47779fa3
+          </div>
+        
+          <div class="alert fade in alert-error">
+            The CDRC Data service is at risk from 15 March 2019. Please see the front page for further details.
+          </div>
+        
+      
+    </div>
+  
+  <div id="productchooser">
+    <a href="https://www.cdrc.ac.uk/"><img src="/images/CDRC Col.jpg" alt="CDRC" style="height: 50px; margin: 10px 10px 10px 20px;"></a>
+    <div id="productitems">
+      <a href="https://cdrc.ac.uk/"><div class="productitem">CDRC</div></a>
+      <a href="https://data.cdrc.ac.uk/"><div class="productitem" id="activeproductitem">Data</div></a>
+      <a href="https://maps.cdrc.ac.uk/"><div class="productitem">Maps</div></a>
+      <a href="https://indicators.cdrc.ac.uk/"><div class="productitem" style="font-size: 11px; line-height: 1.1; padding-top: 6px">Indicators <br/> &amp; Stories</div></a>
+      <a href="http://nrdf.cdrc.ac.uk/"><div class="productitem">NRDF</div></a>
+    </div>
+  </div>
+  <div id="product">
+    
+<div class="container">
+  
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <header class="account-masthead">
+      
+        
+          <nav class="account not-authed">
+            <ul class="unstyled">
+              
+              <li><a class=" active" href="/user/login">Log in</a></li>
+              
+                <li><a class="sub" href="/user/register">Register</a></li>
+              
+              
+            </ul>
+          </nav>
+        
+      
+    </header>
+  
+
+
+  <header class="navbar navbar-static-top masthead">
+    
+      
+    
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse">
+
+        
+          <nav class="section navigation" style="margin-right: 0px">
+            <ul class="nav nav-tabs" style="margin-right: 0px">
+              
+                <li><a href="/topic">Topics</a></li><li><a href="/product">Products</a></li>
+                <li class="dropdown">
+                  <a id="nav-geography"class="dropdown-toggle" role="button" href="#" data-toggle="dropdown">
+                    Geography
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="nav-geography">
+                    <li><a href="#" style="background: white; cursor: default; color: #888;">Geography</a></li>
+                    <li><a href="/lad">LADs</a></li><li><a href="/cauth">Combined Authorities</a></li><li><a href="/stp">STPs</a></li><li><a href="/lep">LEPs</a></li><li><a href="/national">National</a></li>
+                  </ul>
+                </li>
+                <li><a href="/dataset">All Datasets</a></li>
+                <li><a href="/tutorial">Tutorials</a></li>
+                <li class="productchooser-narrow">
+                  <a href="https://cdrc.ac.uk/">CDRC</a>
+                </li>
+                <li class="productchooser-narrow">
+                  <a href="https://maps.cdrc.ac.uk/">Maps</a>
+                </li>
+                <li class="productchooser-narrow">
+                  <a href="http://indicators.cdrc.ac.uk/">Indicators &amp; Stories</a>
+                </li>
+                <li class="productchooser-narrow">
+                  <a href="http://nrdf.cdrc.ac.uk/">NRDF</a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+      </div>
+  </header>
+</div>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<!-- Snippet snippets/home_breadcrumb_item.html start -->
+
+<li class="home"><a href="/"><i class="icon-home"></i><span> Home</span></a></li>
+<!-- Snippet snippets/home_breadcrumb_item.html end -->
+
+                    
+  <li class="active"><a class=" active" href="/user/login">Login</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          
+          <div class="row wrapper">
+
+            
+            
+            
+
+            
+              <div class="primary span-right">
+                
+                
+  <section class="module">
+    <div class="module-content">
+      <h1 class="page-heading">Login</h1>
+      
+        
+<!-- Snippet user/snippets/login_form.html start -->
+
+
+
+
+
+
+<form action="/login_generic?came_from=https%3A//data.cdrc.ac.uk/dataset/7c80cf31-5bf5-4714-9647-d3ca47779fa3/resource/0c43c412-23cc-4a04-afc0-b01ac367e127/download/c11qs415ukoa.csv" method="post" class="form-horizontal">
+  
+  
+
+
+  
+  <div class="control-group control-medium">
+    <label class="control-label" for="field-login">User</label>
+    <div class="controls ">
+      
+    <input id="field-login" type="text" name="login" value="" placeholder="Username or Email"  />
+  
+      
+      
+    </div>
+  </div>
+
+
+
+  
+  <div class="control-group control-medium">
+    <label class="control-label" for="field-password">Password</label>
+    <div class="controls ">
+      
+    <input id="field-password" type="password" name="password" value="" placeholder="Password"  />
+  
+      
+      
+    </div>
+  </div>
+
+
+
+  <div class="control-group ">
+    <div class="controls">
+      <label class="checkbox" for="field-remember">
+        <input id="field-remember" type="checkbox" name="remember" value="63072000" checked   />
+        Remember me
+        
+        
+      </label>
+      
+    </div>
+  </div>
+
+
+  <div class="form-actions">
+    
+    <button class="btn btn-primary" type="submit">Login</button>
+    
+  </div>
+</form>
+
+<!-- Snippet user/snippets/login_form.html end -->
+
+      
+    </div>
+  </section>
+
+              </div>
+            
+
+            
+              <aside class="secondary span-left">
+                
+                
+  
+  
+  <section class="module module-narrow module-shallow">
+    
+      <h2 class="module-heading">Need an Account?</h2>
+      <div class="module-content">
+        <p>Then sign right up, it only takes a minute.</p>
+        <p class="action">
+        
+          <a class="btn" href="/user/register">Create an Account</a>
+        
+        </p>
+      </div>
+    
+  </section>
+  
+  
+
+  
+  <section class="module module-narrow module-shallow">
+    
+    <h2 class="module-heading">Forgotten your password?</h2>
+    <div class="module-content">
+      <p>No problem, use our password recovery form to reset it.</p>
+      <p class="action">
+        
+        <a class="btn" href="/user/reset">Forgot your password?</a>
+        
+      </p>
+    </div>
+    
+  </section>
+  
+
+              </aside>
+            
+          </div>
+        
+      </div>
+      
+    </div>
+  
+    <footer class='contact-footer'>
+  <div class="container">
+    <div class="row">
+      <div class="seven span7">
+        <div class="key-section">
+          <h6 style="font-weight: 500; font-size: 16px; line-height: 16px">Key website sections</h6>
+          <div>
+            <ul class="pull-left" style="margin-left: 0">
+              <li>
+                <a href="http://www.cdrc.ac.uk/about-cdrc/">About CDRC</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/data-services/">Data Services</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/training-capacity-building/">Training &#038; Capacity Building</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/research/">Research</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/partners/">Partners</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/news-events/">News &#038; Events</a>
+              </li>
+              <li>
+                <a href="http://www.cdrc.ac.uk/connect/">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-cdrc">
+          <h6 style="font-weight: 500; font-size: 16px; line-height: 16px">Contact CDRC</h6>
+          <table>
+            <tr>
+              <td style="width: 100px"><p>Telephone</p></td>
+              <td><p><strong>0113 343 0120</strong> (Leeds)</p></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><p><strong>020 3108 1098</strong> (UCL/Liv/Ox)</p></td>
+            </tr>
+            <tr>
+              <td><p>Email</p></td>
+              <td><p><a href="mailto:info@cdrc.ac.uk">info@cdrc.ac.uk</a></p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="site-footer">
+  <div class="container">
+    
+      <div class="span12 attribution" style="margin-top: 20px">
+        
+          
+        
+        
+          
+        
+        
+        <center>
+          <a href="http://www.esrc.ac.uk">
+            <img class='footer-logos' src="/images/esrc_logo.png" alt="Economic and Social Research Council"/>
+          </a>
+          <a href="http://www.ucl.ac.uk">
+            <img class='footer-logos' src="/images/ucl_logo.png" alt="University College London"/>
+          </a>
+          <a href="http://www.liv.ac.uk">
+            <img class='footer-logos' src="/images/liverpool_logo.png" alt="University of Liverpool"/>
+          </a>
+          <a href="http://www.ox.ac.uk">
+            <img class='footer-logos' src="/images/oxford_logo.png" alt="University of Oxford"/>
+          </a>
+          <a href="http://www.leeds.ac.uk">
+            <img class='footer-logos' src="/images/leeds_logo.png" alt="University of Leeds"/>
+          </a>
+        </center>
+        
+      </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+<div class="final-footer">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="menu-footer-container">
+          <ul class="pull-left">
+            <li>
+              <a href="http://www.ucl.ac.uk/disclaimer" target="_blank">Disclaimer</a>
+            </li>
+
+            <li>
+              <a href="http://www.ucl.ac.uk/accessibility">Accessibility</a>
+            </li>
+
+            <li>
+              <a href="https://www.cdrc.ac.uk/privacypolicy/">Privacy</a>
+            </li>
+
+            <li>
+              <a href="http://www.ucl.ac.uk/cookies">Cookies</a>
+            </li>
+
+          </ul>
+        </div>
+        <p><span style="color: #aaaaaa">Based on CKAN and developed by Wen Li</span> &copy; 2015 Consumer Data Research Centre</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <script src="//use.typekit.net/pra1loi.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    
+    
+
+    
+      
+    
+  
+    
+
+      
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2017-03-21T23:10:52/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2017-03-21T23:10:52/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2018-05-23T09:44:35.29/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/related-item.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/image-upload.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2018-05-23T09:44:35.29/tracking.min.js"></script>
+<script type="text/javascript" src="/fanstatic/cdrc/:version:2018-09-05T15:35:36.98/:bundle:vendor/cookieconsent/cookieconsent.js;javascript/modules/cookieconsent.js"></script></body>
+</html>
