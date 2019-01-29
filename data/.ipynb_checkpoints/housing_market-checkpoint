@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+  <title>MHCLG Open Data</title>
+
+  <!-- METADATA -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google likes this to be in the head. It shouldn't block. -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3566016-13"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-3566016-13');
+  </script>
+  
+	<!-- JAVASCRIPT -->
+	<script src="/assets/modernizr-4762a6fd8b7a4281713fa0a4ffc98cf3.js"></script>
+
+	<!-- FONTS come before stylesheets -->
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+	<link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	    <link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+
+	<!-- favicons -->
+	<link rel="shortcut icon" href="/dclg_favicon.ico"/>
+
+	<!-- STYLESHEETS -->
+  <link rel="stylesheet" media="screen" href="/pmd2.css" />
+
+	<style>
+		.no_sheet .visible_when_sheet_available {
+				display: none !important;
+		}
+	</style>
+
+	<!-- PAGE-SPECIFIC-STUFF -->
+	
+
+
+</head>
+
+	<body class='no_sheet'>
+	<svg class="hide"><symbol viewBox="0 0 48 48" id="icon-add"><title>add</title> <g> <path d="M20.4,35.7v-8.3h-8.3v-7h8.3v-8.3h7v8.3h8.3v7h-8.3v8.3H20.4z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-cart"><title>cart</title> <path d="M13.7,35.9c0,1.9,1.5,3.4,3.4,3.4c1.9,0,3.4-1.5,3.4-3.4c0-1.9-1.5-3.4-3.4-3.4C15.2,32.4,13.7,34,13.7,35.9z M30.7,35.9
+	c0,1.9,1.5,3.4,3.4,3.4c1.9,0,3.4-1.5,3.4-3.4c0-1.9-1.5-3.4-3.4-3.4C32.3,32.4,30.7,34,30.7,35.9z M19.8,27.8l18.8-5.4
+	c0.4-0.1,0.7-0.5,0.7-0.9v-9.4h-24V9.3c0-0.4-0.3-0.7-0.7-0.7H9.3c-0.4,0-0.7,0.3-0.7,0.7V12h3.3l3.3,15.4l0.3,1.6v2.6
+	c0,0.4,0.3,0.7,0.7,0.7h0.9h17h4.4c0.4,0,0.7-0.3,0.7-0.7V29H20.1C18.2,29,18.1,28.3,19.8,27.8z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-choropleth"><title>choropleth</title> </symbol><symbol viewBox="0 0 48 48" id="icon-column"><title>column</title> <path d="M23.4,0L3.3,11.6v23.2l20.1,11.6l20.1-11.6V11.6L23.4,0z M23.4,22.6l-5.5-3.2l5.5-3.2l5.5,3.2L23.4,22.6z M17.4,20.3
+	l5.5,3.2v17.3l-5.5-3.2V20.3z M23.9,23.5l5.5-3.2v17.3l-5.5,3.2V23.5z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-cross"><title>cross</title> <g> <path d="M13.3,29.7l5.9-5.9l-5.9-5.9l5-5l5.9,5.9l5.9-5.9l5,5l-5.9,5.9l5.9,5.9l-5,5l-5.9-5.9l-5.9,5.9L13.3,29.7z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-cube"><title>cube</title> <path d="M3.3,11.6v23.2l20.1,11.6l20.1-11.6V11.6L23.4,0L3.3,11.6z M38.4,13.9l-15,8.7l-15-8.7l15-8.7L38.4,13.9z M7.9,14.8l15,8.7
+	v17.3l-15-8.7V14.8z M23.9,40.8V23.5l15-8.7v17.3L23.9,40.8z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-error"><title>error</title> <g> <path d="M41,33.7L25.3,6.1c-0.2-0.4-0.6-0.6-1.1-0.6c-0.4,0-0.8,0.2-1.1,0.6L7.4,33.7c-0.2,0.4-0.2,0.8,0,1.2
+		c0.2,0.4,0.6,0.6,1.1,0.6H40c0.4,0,0.8-0.2,1.1-0.6C41.2,34.5,41.2,34.1,41,33.7z M26.2,32h-3.9v-3.5h3.9V32z M26.2,25.8h-3.9V15.2
+		h3.9V25.8z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-file"><title>file</title> <path d="M36,38H12V8h14.3l9.7,9.8V38z M15,35h18V19l-8-8H15V35z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-folder"><title>folder</title> <path d="M43.3,16.2c-0.5-0.8-1.4-1.2-2.4-1.2H38v-1.1c0-1.9-1.1-2.9-3-2.9H21.2c-0.1-1-0.2-0.5-0.2-0.8V9.3c0-2-1.9-3.3-3.7-3.3H8
+	C6.2,6,5,7.3,5,9.3v22.4c0,2,1.2,3.3,3,3.3h27c0.6,0,1.1-0.2,1.5-0.4c1.1-0.5,1.9-1.4,2.3-2.4l4.8-13.3
+	C43.9,17.9,43.8,16.9,43.3,16.2z M36,31.2c-0.1,0.3-0.6,0.7-1,0.8c-0.1,0-0.1,0.1-0.2,0.1h-0.2L8.7,32l4.8-13.3
+	c0.1-0.2,0.6-0.7,1.1-0.7l26.2,0L36,31.2z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-geo"><title>geo</title> <path d="M24,1.4c-10.8,0.1-19.4,9-19.2,19.7c0.1,10.8,9,19.4,19.7,19.2c10.8-0.1,19.4-9,19.2-19.7C43.6,9.8,34.8,1.2,24,1.4z
+	 M24.5,36.2C16,36.3,9,29.5,8.9,21C8.8,12.5,15.6,5.6,24.1,5.5c8.5-0.1,15.5,6.7,15.6,15.2C39.8,29.1,33,36.1,24.5,36.2z M15,30
+	c0,0,9.3-1.3,13.2-5.2c4-4,5.2-13.2,5.2-13.2s-9.3,1.3-13.2,5.2C16.3,20.7,15,30,15,30z M22.3,18.7c1.7-1.7,4.8-2.8,7.6-3.6
+	c-0.7,2.7-1.9,5.9-3.6,7.6c-1.1,1.1-2.9,1.1-4,0C21.2,21.6,21.2,19.9,22.3,18.7z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-help"><title>help</title> <path d="M24,5.4C15.9,5.5,9.4,12.1,9.5,20.2c0.1,8.1,6.7,14.5,14.8,14.4c8.1-0.1,14.5-6.7,14.4-14.8C38.7,11.8,32.1,5.3,24,5.4z
+	 M25.8,23h-4.2v-0.4c0-0.7,0.1-1.3,0.2-1.7s0.4-0.8,0.7-1.2c0.3-0.4,1-1,2.1-1.9c0.6-0.5,0.9-0.9,0.9-1.3c0-0.4-0.1-0.7-0.4-0.9
+	c-0.2-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.9,0.2-1.3,0.5c-0.3,0.3-0.6,0.9-0.7,1.8L18,17c0.1-1.6,0.7-2.8,1.7-3.8c1-1,2.5-1.4,4.5-1.4
+	c1.6,0,2.9,0.3,3.8,1c1.3,0.9,2,2.1,2,3.6c0,0.6-0.2,1.2-0.5,1.8c-0.3,0.6-1,1.3-2.1,2.1c-0.7,0.6-1.2,1-1.4,1.4
+	C25.9,22,25.8,22.5,25.8,23z M21.5,24.1h4.4V28h-4.4V24.1z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-home"><title>home</title> <g> <path d="M38,21.6L23.9,7.6c-0.7-0.7-1.9-0.7-2.6,0L7.3,21.6C6.5,22.4,6.8,23,7.9,23h2.9v10.8c0,0.8,0,1.4,1.4,1.4h6.8V24.4h7.1
+		v10.8h7.2c1.1,0,1.1-0.6,1.1-1.4V23h2.9C38.5,23,38.7,22.4,38,21.6z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-lock"><title>lock</title> <path fill="none" d="M25.4,10h-1.2c-2.8,0-5.2,2.3-5.2,5.1V21h12v-5.9C31,12.3,28.2,10,25.4,10z"/> <path d="M37,21v-5.9C37,9,31.6,4,25.4,4h-1.2C18.1,4,13,9,13,15.1V21h-3v10.9C10,39.1,15.6,45,22.8,45h3.6C33.6,45,40,39.1,40,31.9
+	V21H37z M27,36h-5v-8h5V36z M19,21v-5.9c0-2.8,2.4-5.1,5.2-5.1h1.2c2.8,0,5.6,2.3,5.6,5.1V21H19z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-obs"><title>obs</title> <path d="M23.4,0L3.3,11.6v23.2l20.1,11.6l20.1-11.6V11.6L23.4,0z M22.9,29.8l-5.5-3.2v-6.3l5.5,3.2V29.8z M23.4,22.6l-5.5-3.2
+	l5.5-3.2l5.5,3.2L23.4,22.6z M29.4,26.6l-5.5,3.2v-6.3l5.5-3.2V26.6z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-poi"><title>poi</title> <g> <path d="M24.3,3.4c-6.4,0-11.7,5.2-11.7,11.7c0,11.1,11.7,25.7,11.7,25.7S36,26.3,36,15.1C36,8.7,30.7,3.4,24.3,3.4z M24.3,21.6
+		c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3C30.6,18.7,27.8,21.6,24.3,21.6z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-rdf"><title>rdf</title> <path d="M33.1,15c-2.5,0-4.7,1.2-6,3.1l-3.8-1.8c0.2-0.6,0.3-1.2,0.3-1.9c0-4.1-3.3-7.4-7.4-7.4c-4.1,0-7.4,3.3-7.4,7.4
+	c0,3.8,2.9,7,6.7,7.4l0.3,3.6c-2.9,1-5,3.8-5,7c0,4.1,3.3,7.4,7.4,7.4c4.1,0,7.4-3.3,7.4-7.4c0-0.9-0.2-1.8-0.5-2.6l2.9-2
+	c1.3,1.3,3.1,2.1,5.1,2.1c4.1,0,7.4-3.3,7.4-7.4S37.2,15,33.1,15z M18.6,25l-0.3-3.5c1.5-0.5,2.7-1.3,3.6-2.5l3.9,1.9
+	c-0.1,0.5-0.2,1-0.2,1.6c0,1,0.2,2,0.6,2.9l-2.8,1.9C22.2,26,20.5,25.1,18.6,25z M11.9,10.3c1.8-1.9,4.6-2.2,6.3-0.6l0,0
+	C17.5,9,15.6,9.1,14,10.2c0.2,0.2,0.3,0.4,0.3,0.7c0,0.7-0.5,1.2-1.2,1.2c-0.1,0-0.2,0-0.3,0h-0.1c-0.5,0-0.8,0.3-0.9,0.5
+	c-0.9,1.6-0.9,3.4,0,4.2C10.1,15,10.2,12.3,11.9,10.3z M13.9,28.5c1.8-1.9,4.6-2.2,6.3-0.6l0,0c-0.7-0.7-2.6-0.6-4.3,0.5
+	c0.2,0.2,0.3,0.2,0.3,0.6c0,0.7-0.5,1-1.2,1c-0.1,0-0.2,0-0.3,0h-0.1c-0.5,0-0.8,0.4-0.9,0.6c-0.9,1.6-0.9,3.4,0,4.2
+	C12.2,33.2,12.3,30.5,13.9,28.5z M29,18.4c1.8-1.9,4.6-2.2,6.3-0.6l0,0c-0.7-0.7-2.6-0.6-4.3,0.5c0.2,0.2,0.3,0.3,0.3,0.6
+	c0,0.7-0.5,1.1-1.2,1.1c-0.1,0-0.2,0-0.3,0h-0.1c-0.5,0-0.8,0.3-0.9,0.5c-0.9,1.6-0.9,3.4,0,4.2C27.2,23.1,27.3,20.3,29,18.4z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-remove"><title>remove</title> <g> <path d="M12.5,30.1l6.4-6.4l-6.4-6.4l5.4-5.4l6.4,6.4l6.4-6.4l5.4,5.4l-6.4,6.4l6.4,6.4l-5.4,5.4l-6.4-6.4l-6.4,6.4L12.5,30.1z"/> </g> </symbol><symbol viewBox="0 0 48 48" id="icon-search"><title>search</title> <path d="M44.6,40.1l-8-8c5-7,4.4-16.8-1.9-23.1C31.3,5.6,26.8,3.8,22,3.8S12.7,5.6,9.3,9c-7,7-7,18.4,0,25.4
+	c3.4,3.4,7.9,5.3,12.7,5.3c3.8,0,7.4-1.2,10.4-3.3l8,8L44.6,40.1z M13.1,30.7c-2.4-2.4-3.7-5.6-3.7-8.9s1.3-6.5,3.7-8.9
+	c2.4-2.4,5.6-3.7,8.9-3.7s6.5,1.3,8.9,3.7c2.4,2.4,3.7,5.6,3.7,8.9s-1.3,6.5-3.7,8.9c-2.4,2.4-5.6,3.7-8.9,3.7S15.4,33.1,13.1,30.7z
+	"/> </symbol><symbol viewBox="0 0 48 48" id="icon-slice"><title>slice</title> <path d="M3.3,11.6v23.2l20.1,11.6l20.1-11.6V11.6L23.4,0L3.3,11.6z M34.9,15.9l-11.5,6.7l-15-8.7l11.5-6.7L34.9,15.9z M23.9,23.5
+	l11.5-6.7v17.3l-11.5,6.7V23.5z M7.9,14.8l15,8.7v17.3l-15-8.7V14.8z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-spreadsheet"><title>spreadsheet</title> <rect x="17.8" y="3.3" width="28.2" height="6.6"/> <rect x="17.8" y="11.5" width="28.2" height="6.6"/> <rect x="17.8" y="19.7" width="28.2" height="6.6"/> <rect x="17.8" y="27.8" width="28.2" height="6.6"/> <rect x="2.3" y="11.5" width="14" height="6.6"/> <rect x="2.3" y="19.7" width="14" height="6.6"/> <rect x="2.3" y="27.8" width="14" height="6.6"/> </symbol><symbol viewBox="0 0 48 48" id="icon-success"><title>success</title> <path d="M23.4,5.4C15.4,5.5,8.9,12.1,9,20.2c0.1,8.1,6.7,14.5,14.8,14.4c8.1-0.1,14.5-6.7,14.4-14.8C38.2,11.8,31.5,5.3,23.4,5.4z
+	 M22.3,28.5l-6.4-6.3l2.8-2.9l3,2.9l6-8.9l3.3,2.2L22.3,28.5z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-table"><title>table</title> <path d="M3.3,11.6v23.2l20.1,11.6l20.1-11.6V11.6L23.4,0L3.3,11.6z M28.9,19.4l-5.5,3.2l-15-8.7l5.5-3.2L28.9,19.4z M23.9,23.5
+	l5.5-3.2v17.3l-5.5,3.2V23.5z M7.9,14.8l15,8.7v17.3l-15-8.7V14.8z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-unlock"><title>unlock</title> <path d="M36.1,21l1.4-4.8c1.7-5.9-2.2-12.2-8.1-13.9L28.3,2c-5.9-1.7-12.2,1.7-13.9,7.6l-1.6,5.7l5.8,1.6l1.6-5.7
+	c0.8-2.7,3.7-4.3,6.5-3.5l1.1,0.3c2.7,0.8,4.7,3.7,4,6.5L29.9,21H9v10.9C9,39.1,14.6,45,21.8,45h3.6C32.6,45,39,39.1,39,31.9V21
+	H36.1z M26,36h-5v-8h5V36z"/> </symbol><symbol viewBox="0 0 48 48" id="icon-warning"><title>warning</title> <g> <path d="M24,5.4C15.9,5.5,9.4,12.1,9.5,20.2c0.1,8.1,6.7,14.5,14.8,14.4c8.1-0.1,14.5-6.7,14.4-14.8C38.7,11.8,32.1,5.3,24,5.4z
+		 M25.6,10.3c1.5,0,1.9,0.9,1.9,1.8c0,1.2-1,2.4-2.7,2.4c-1.4,0-2.1-0.7-2-1.9C22.8,11.6,23.6,10.3,25.6,10.3z M21.8,29.2
+		c-1,0-1.8-0.6-1-3.3l1.2-4.8c0.2-0.8,0.2-1.1,0-1.1c-0.3,0-1.6,0.5-2.4,1.1L19,20.2c2.5-2.1,5.3-3.3,6.5-3.3c1,0,1.2,1.2,0.7,3.1
+		L24.9,25c-0.2,0.9-0.1,1.2,0.1,1.2c0.3,0,1.3-0.4,2.3-1.1l0.6,0.8C25.4,28.3,22.8,29.2,21.8,29.2z"/> </g> </symbol></svg>
+	<div class='page fill_height_container'>
+		<div class='fill_height_container fill_height'>
+			<div class="notices">
+	<!--[if lte IE 10]>
+	<aside class="error "><div class="pagewidth" role="status"><svg class='icon'><use xlink:href='#icon-error'/></svg>
+		Your browser is <strong>not supported</strong> by this site. Please use a more modern browser.
+</div></aside>	<![endif]-->
+
+	<aside class="warning hidden_when_javascript_available"><div class="pagewidth" role="status"><svg class='icon'><use xlink:href='#icon-warning'/></svg>
+		<strong>JavaScript</strong> is disabled, so you're missing out on some features.
+</div></aside>
+
+	
+
+  	<aside class="error "><div class="pagewidth" role="status"><svg class='icon'><use xlink:href='#icon-error'/></svg>
+		<strong>Error 404</strong> Resource not found
+</div></aside>
+</div>
+
+      <div class="zib"><div class="rawdata">
+      
+			<!--- paste zib-style icons here --->
+<div class="svg-icon-lib">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="download" viewBox="0 0 24 24">
+      <path d="M11.8 5c3.4 0 5.8 2.7 5.5 6.7 1.7 0 4.4.7 4.4 3.7 0 1.9-1.5 3.4-3.4 3.4H5.4c-1.9 0-3.4-1.5-3.4-3.4 0-2.7 2.4-3.8 4.4-3.7C6.2 7.5 8.5 5 11.8 5zm0-2c-3.9 0-7.1 3.1-7.4 7-2.5.4-4.4 2.6-4.4 5.3 0 3 2.4 5.4 5.4 5.4h12.8c3 0 5.4-2.4 5.4-5.4 0-2.7-1.9-4.9-4.4-5.3-.3-3.9-3.5-7-7.4-7zm-3.9 9.8h2.9V8.9h2v3.9h2.9l-3.9 3.9-3.9-3.9z"></path>
+    </symbol>
+    <symbol id="info" viewBox="0 0 24 24">
+      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 0 1 0-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"></path>
+    </symbol>
+    <symbol id="magnifying-glass" viewBox="0 0 20 20">
+      <path d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"></path>
+    </symbol>
+    <symbol id="page" viewBox="0 0 24 24">
+      <path d="M15 2v5h5v15H4V2h11zm1-2H2v24h20V6l-6-6z"></path>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 24 24">
+      <path d="M11.9.3C7.1.3 3.2 4.1 3.2 8.9c0 7.6 8.7 15.1 8.7 15.1s8.7-7.6 8.7-15.1c0-4.8-3.9-8.6-8.7-8.6zm0 14.6c-3.5 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2 6.2 2.8 6.2 6.2-2.8 6.2-6.2 6.2z"></path>
+    </symbol>
+    <symbol id="script" viewBox="0 0 24 24">
+      <path d="M21.312 12.644c-.972-1.189-3.646-4.212-4.596-5.284l-1.785 1.018 4.658 5.35c.622.692.458 1.704-.376 2.239-.773.497-5.341 3.376-6.386 4.035-.074-.721-.358-1.391-.826-1.948s-6.114-7.376-7.523-9.178c-.471-.601-.576-1.246-.297-1.817.268-.549.842-.918 1.431-.918.918 0 1.408.655 1.548 1.215.161.641-.035 1.231-.623 1.685l1.329 1.624 7.795-4.446a3.439 3.439 0 0 0 .93-4.513A3.46 3.46 0 0 0 13.616 0c-1.188 0-.793-.016-9.566 4.475C2.817 5.066 2 6.262 2 7.677c0 .87.308 1.756.889 2.487 1.426 1.794 7.56 9.185 7.616 9.257.371.493.427 1.119.15 1.673a1.57 1.57 0 0 1-1.429.886c-.919 0-1.409-.655-1.549-1.216-.157-.629.011-1.208.604-1.654l-1.277-1.545c-.823.665-1.278 1.496-1.377 2.442C5.394 22.212 7.152 24 9.241 24c.595 0 1.311-.177 1.84-.51l9.427-5.946C21.465 16.88 22 15.763 22 14.647a3.16 3.16 0 0 0-.688-2.003zM13.019 2.152c.188-.087.399-.134.609-.134.533 0 .998.281 1.244.752.312.596.225 1.469-.547 1.912L9.226 7.57a3.59 3.59 0 0 0-1.454-2.732l5.247-2.686z"></path>
+    </symbol>
+    <symbol id="sheet" viewBox="0 0 24 24">
+      <path d="M15 2H2v19h19V2h-6zM9 3h5v5H9V3zm5 11H9V9h5v5zM3 3h5v5H3V3zm0 6h5v5H3V9zm5 11H3v-5h5v5zm6 0H9v-5h5v5zm6 0h-5v-5h5v5zm0-6h-5V9h5v5zm-5-6V3h5v5h-5z"></path>
+      <path class="st0" opacity=".5" d="M14.5 2.5h-12v18h6v-12h12v-6z"></path>
+    </symbol>
+    <symbol id="warning" viewBox="0 0 24 24">
+      <path d="M12 5.177L20.631 21H3.369L12 5.177zM12 1L0 23h24L12 1zm-1 9h2v6h-2v-6zm1 9.75a1.251 1.251 0 0 1 0-2.5 1.251 1.251 0 0 1 0 2.5z"></path>
+    </symbol>
+  </svg>
+</div>
+<div class="svg-icon-lib"><svg><symbol id="swirrl" viewBox="0 0 513.5 136.1"><path d="M196.4,45.8c0,9,8.4,12.3,18.2,16c12.1,4.7,25.9,10,25.9,28.3c0,18.2-20.7,39.4-47.4,39.4c-9.8,0-19.3-2.7-26.6-7.6 c-7-4.7-11-10.7-11-16.6c0-7.2,3.3-13.4,8.2-15.5c0.1-0.1,0.2-0.1,0.4-0.1c0.4,0,0.8,0.3,1,0.7c4.2,11.5,17.2,19.1,32.4,19.1 c13.1,0,20.2-8,20.2-15.6c0-9.8-9.2-14.3-19-19.1c-11.3-5.5-24.1-11.8-24.1-27.5c0-10.8,5.1-21,14.4-29c8.5-7.3,19.8-11.6,30.1-11.6 c8.2,0,15.3,2.1,20.4,6c4.8,3.7,7.5,8.5,7.5,13.8c0,5.6-2.9,11.1-7,13.4c-0.1,0.1-0.3,0.1-0.5,0.1c-0.4,0-0.8-0.2-1-0.6 c-3.8-6.9-10.9-10.4-21.2-10.4C205.4,29.1,196.4,36.3,196.4,45.8z"></path><path d="M335.8,36.4c-3.6-2.1-9.3-3.8-14.5-4.4c-0.5-0.1-0.6,0.2-0.7,0.3c-0.1,0.2,0,0.4,0.2,0.7c2.1,2.3,3.6,8.6,3.6,11.7 c0,10.3-3.2,23.1-8.5,34.3c-5,10.5-10.9,17.3-15,17.3c-1,0-3.4-0.3-3.4-3.2c0-10.9,8.9-32.1,15.5-37.1c0.1-0.1,0.2-0.3,0.1-0.5 c-1.5-2.6-3.8-3.9-7.9-4.6c-0.8-0.1-1.6-0.2-2.3-0.2c-3.7,0-7.2,1.4-9.6,3.8c-5.7,5.7-12.5,21.8-14.3,32.8c-3,4.5-6.8,8.1-10.9,8.1 c-1.8,0-4-0.7-4-5.9c0-6.4,2.4-14.1,6.8-21.8c3.8-6.7,8.8-12.5,12.9-15.2c0.2-0.1,0.2-0.3,0.1-0.5c-1.2-1.8-3.8-5-8.4-5.9c-1-0.2-2.1-0.3-3.2-0.3c-2,0-5.7,0.3-8.1,2.7c-5.6,5.6-18.7,21.2-18.7,44.6c0,4.8,1.5,9.6,4.2,13.2c2.1,2.8,5.9,6.1,12,6.1 c6.1,0,11.6-2.6,16.2-7.8c0.6-0.7,1.2-1.5,1.8-2.3c0.7,2,1.5,3.8,2.6,5.3c3,4.1,7.4,6.2,13.1,6.2c9.9,0,21.7-8.9,32.5-24.5 c9.6-13.8,16-29.9,16-40.1C344.3,43.9,341.5,39.7,335.8,36.4z"></path><path d="M367,70.7c3.1-5.6,5.5-10.1,5.5-13.3c0-4.7-5.5-9.7-13.7-9.7c-1.8,0-3.7,0.3-5.5,0.8c-0.5,0.1-0.9,0.7-0.8,1.3 c1.6,7.5-2.4,15.6-6.6,24.1c-4.2,8.5-8.5,17.3-8.5,27c0,6.5,6.3,11.6,14.3,11.6c0,0,0,0,0,0c2.3,0,4.6-0.4,6.9-1.2 c0.3-0.1,0.5-0.3,0.6-0.5c0.1-0.3,0.1-0.6,0-0.8C353.2,96.2,361.2,81.4,367,70.7z"></path><path d="M364.7,33.7c2.1,1.2,5.1,1.9,8.3,1.9c0,0,0,0,0,0c1.9,0,3.8-0.2,5.6-0.7c0.1,0,0.2-0.1,0.2-0.2c1.1-2.8,2.1-4.8,3.1-6.6 c1.6-3,2.7-5.2,2.7-8.5c0-4.1-3.7-6.6-9.5-6.6c-3,0-6.4,0.7-9.5,2c-0.1,0-0.2,0.1-0.2,0.2c-0.8,2.1-1.6,3.7-2.2,5.1 c-1.3,2.7-2.2,4.6-2.2,7.3C361,30.2,362.2,32.3,364.7,33.7z"></path><path d="M424.1,54.2c0-5.8-2.4-9-6.9-9c-5.5,0-12.4,4.6-16.4,10.9c-0.7-4.4-5.8-7.9-11.9-7.9c-2.9,0-5.7,0.8-8.1,2.4 c-0.1,0.1-0.2,0.2-0.2,0.3c1.4,10-3.1,19.1-7.5,27.9c-3.5,7-6.8,13.6-6.8,20.1c0,8.6,4.1,13.5,11.3,13.5c3.8,0,7.6-1.4,10.3-3.8 c0.4-0.3,0.5-1,0.3-1.5c-3.3-7.9-1.1-21.8,4.7-30.5c2.7-4,7.3-8.7,14.2-8.7c2.9,0,5.7,1,7.2,2.5c0.1,0.1,0.3,0.1,0.5,0 C420.9,66.1,424.1,60.5,424.1,54.2z"></path><path d="M463.9,70.5c6.1-4.3,9.4-9.9,9.4-16.3c0-5.8-2.4-9-6.9-9c-5.5,0-12.4,4.6-16.4,10.9c-0.7-4.4-5.8-7.9-11.9-7.9 c-2.9,0-5.7,0.8-8.1,2.4c-0.1,0.1-0.2,0.2-0.2,0.3c1.4,10-3.1,19.1-7.5,27.9c-3.5,7-6.8,13.6-6.8,20.1c0,8.6,4.1,13.5,11.3,13.5 c3.8,0,7.6-1.4,10.3-3.8c0.4-0.3,0.5-1,0.3-1.5c-3.3-7.9-1.1-21.8,4.7-30.5c2.7-4,7.3-8.7,14.2-8.7c2.9,0,5.7,1,7.2,2.5 C463.6,70.5,463.8,70.6,463.9,70.5z"></path><path d="M510.7,25.9c0-9.3-5.6-15.8-13.6-15.8c-3.8,0-7.7,1.6-10.8,4.5c-0.4,0.4-0.5,1-0.3,1.5c6,13.5-2.4,32.6-10.5,51.1 c-6.2,14.1-12,27.3-12,38.3c0,9.8,5.1,16.6,12.3,16.6c5.6,0,9-1.5,11.2-4.9c0.3-0.4,0.3-1.1,0.1-1.6c-6.8-16.1,2.3-35,11.2-53.3 C504.7,49.3,510.7,36.9,510.7,25.9z"></path><path d="M125.4,14.7C112.7,5.5,96.3,0.3,78,0C40.1-0.7,5.3,25.1,0.5,57.5c-4.8,32.4,22.2,59.3,60.2,60 c26.2,0.5,50.1-17.4,53.4-39.8c3.3-22.4-15.3-41-41.5-41.5c-14.4-0.3-27.6,9.7-29.4,22.1C41.5,70.7,51.7,81,66.1,81.3 c2.6,0,5-1.9,5.4-4.4c0.4-2.5-1.4-4.6-4-4.6c-9.2-0.2-15.8-6.4-14.7-13.9c1.1-7.5,9.5-13.4,18.7-13.2c21,0.4,36,14.9,33.4,32.3 c-2.6,17.4-21.7,31.3-42.7,30.9C29.3,107.8,5.9,85,9.9,57.6S43.9,8.4,76.7,9c20.4,0.4,38.1,7.3,49.9,19.6c0.2,0.2,0.4,0.1,0.6-0.1 C130,23,130.3,18.2,125.4,14.7z"></path><path d="M75.3,18.1c-26.2-0.5-50.1,17.4-53.4,39.8c-3.3,22.4,15.3,41,41.5,41.5c14.4,0.3,27.6-9.7,29.4-22.1 c1.8-12.5-8.4-22.8-22.8-23.1c-2.6,0-5,1.9-5.4,4.4c-0.4,2.5,1.4,4.6,4,4.6c9.2,0.2,15.8,6.4,14.7,13.9 c-1.1,7.5-9.5,13.4-18.7,13.2c-21-0.4-36-14.9-33.4-32.3C33.9,40.6,53,26.7,74,27.1c32.8,0.6,56.2,23.4,52.1,50.8 c-4,27.4-34,49.2-66.7,48.6c-20.4-0.4-38.1-7.3-49.9-19.6c-0.2-0.2-0.4-0.1-0.6,0.1c-2.8,5.5-3.1,10.3,1.8,13.8 c12.7,9.2,29.1,14.3,47.4,14.6c38,0.7,72.7-25.1,77.5-57.5C140.3,45.7,113.3,18.8,75.3,18.1z"></path></symbol></svg>
+</div>
+
+<header>
+  <div class="row p-banner">
+    <div class="column">
+      <div class="panel-content">
+        <section class="literal banner">
+          <a href="https://www.gov.uk/government/organisations/ministry-of-housing-communities-and-local-government"><h1 class="brand"><span>Ministry of Housing, </span><span>Communities &amp; </span><span>Local Government</span></h1></a>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="row p-masthead">
+    <div class="column">
+      <div class="panel-content">
+        <section class="literal logo">
+          <a href="/"><h1>Open Data</h1></a>
+        </section>
+      </div>
+    </div>
+    <div class="column">
+      <div class="panel-content">
+        <nav class="site-nav" data-select-cart="false">
+          <h2 class="screenreader">Site level navigation</h2>
+          <a href="/atlas">Atlas</a>
+          <a class="selected" href="/data_home">Data</a>
+          <a class="visible_when_sheet_available ]" href="/cart" id="zc-cart-summary"><span class="cart-summary "><span>data cart</span><small><span>0<span class="icon"><svg aria-label="icon" role="img"><use xlink:href="#pin"></use></svg></span>0<span class="icon"><svg aria-label="icon" role="img"><use xlink:href="#sheet"></use></svg></span></span></small></span></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav class="flexoutmenu">
+    <ol>
+      <li class="with-menu">
+        <a href="/data_home">
+        <div>Explore</div>
+</a>        <div>
+          <ol>
+            <li>
+              <a href="/data">
+              <div>All datasets</div>
+</a>            </li>
+            <li>
+              <a href="/resource?uri=http%3A%2F%2Fopendatacommunities.org%2Fdef%2Fconcept%2Ffolders%2Fthemes">
+              <div>By
+                theme</div>
+</a>            </li>
+            <li>
+              <a href="/resource?uri=http%3A%2F%2Fopendatacommunities.org%2Fdef%2Fconcept%2Ffolders%2Forganisations">
+              <div>By
+                organisation</div>
+</a>            </li>
+          </ol>
+        </div>
+      </li>
+      <li class="with-menu">
+        <a href="/sparql">
+        <div>Tools</div>
+</a>        <div>
+          <ol>
+              <li class="visible_when_sheet_available" id="cartg_menu_item">
+                <a href="/cart">
+                <div>Your data cart</div>
+</a>              </li>
+            <li>
+              <a href="/sparql">
+              <div>SPARQL Query</div>
+</a>            </li>
+            <li>
+              <a href="/vocabularies">
+              <div>Vocabularies</div>
+</a>            </li>
+            <li>
+              <a href="/dereference">
+              <div>Dereference URI</div>
+</a>            </li>
+            <li>
+              <a href="/cubetool">
+              <div>Cube utilities</div>
+</a>            </li>
+          </ol>
+        </div>
+      </li>
+      <li class="with-menu search">
+        <a href="/search">
+          <div>Search</div>
+        </a>
+        <div>
+          <ol>
+            <li>
+              <form action='/nav_search' method='GET'>
+                <div class="attached"><input type="text" name="nav_search" id="nav_search" placeholder='search for datasets' style="height: auto;">
+                  <button type='submit'>
+                    <span class="icon">
+                      <svg height="48" viewBox="0 0 48 48" width="48">
+                        <path
+                          d="M46.54,40.33,35.25,29a18.37,18.37,0,0,0,2.68-9.59A19.47,19.47,0,0,0,18.88.4,18.48,18.48,0,0,0,.4,18.88,19.47,19.47,0,0,0,19.45,37.93a18.37,18.37,0,0,0,9.31-2.52L40.11,46.77a2.85,2.85,0,0,0,4,0L46.95,44C48.05,42.84,47.65,41.44,46.54,40.33ZM6.09,18.88A12.79,12.79,0,0,1,18.88,6.08,13.79,13.79,0,0,1,32.25,19.45a12.8,12.8,0,0,1-12.8,12.8A13.79,13.79,0,0,1,6.09,18.88Z"
+                          id="iconsg-search"
+                          transform="translate(-0.4 -0.4)"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <a href="/help">
+        <div>Help</div>
+</a>      </li>
+    </ol>
+  </nav>
+</main>
+
+      </div></div>
+			<main id="pmd-main" class='legacy_tabs five_tabs fill_height_container fill_height'
+            data-enable-data-cart='true'>
+				
+
+
+<div class="fill_height paper">
+	<section>
+		<h1 id="error:resource_not_found">Error: Resource not found</h1>
+		<p>There might be a mistake in the URL which means our application can&#39;t respond to it, or it might be that you have asked about a valid identifier, but there isn&#39;t any information in our database about it.</p>
+	</section>
+</div>
+ 
+			</main>
+		</div>
+		<footer>
+    <section>
+      <p>Linked Open Data from MHCLG. <a href='http://news.opendatacommunities.org'>News</a> | <a href='http://apps.opendatacommunities.org'>Apps</a> | Contact: <a href='mailto:ODC@communities.gsi.gov.uk'>ODC@communities.gsi.gov.uk</a></p>
+    </section>
+	<section>
+		<p><small>This site <a href="/policy#cookies">uses cookies</a>, respects your <a href="/policy#privacy">privacy</a> and works hard to be <a href="/policy#accessibility">accessible to everyone</a>.</small></p>
+		<p><small>Powered by <a href='http://swirrl.com/publishmydata'>PublishMyData</a> &copy;2019 <a href="http://swirrl.com">Swirrl IT Limited</a>.</small></p>
+	</section>
+  <!-- PMD VERSION:  3.1.x  -->
+</footer>
+
+	</div>
+	<script src="/assets/publish_my_data-8d6f2483a5170eb958d57945fbd6cad1.js"></script>
+	<script src="http://opendatacommunities.org/assets/Girder/build/dist/public/otta-7fec690f10504c187d48904b120cde5e.js"></script>
+	<script src="http://opendatacommunities.org/assets/Girder/build/dist/public/clay-ffe2de0bb69f12f8a676a8e4e3c0bdbd.js"></script>
+	
+	
+	
+	</body>
+</html>
